@@ -182,10 +182,36 @@
         1,
         null,
         1,
+        1,
         null
       ],
       "/Users/tyladevon/turing/mod_2/mini_shop/app/helpers/application_helper.rb": [
         1,
+        null
+      ],
+      "/Users/tyladevon/turing/mod_2/mini_shop/spec/models/merchent_spec.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null
       ],
       "/Users/tyladevon/turing/mod_2/mini_shop/app/models/merchant.rb": [
@@ -203,6 +229,11 @@
         1,
         1,
         null,
+        null,
+        1,
+        1,
+        null,
+        null,
         null
       ],
       "/Users/tyladevon/turing/mod_2/mini_shop/app/controllers/application_controller.rb": [
@@ -211,6 +242,6 @@
         null
       ]
     },
-    "timestamp": 1569985744
+    "timestamp": 1570134683
   }
 }
