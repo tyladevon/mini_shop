@@ -70,3 +70,33 @@ RSpec.describe "merchant page", type: :feature do
   expect(page).to have_content("Cats and Stuff")
   end
 end
+
+RSpec.describe "merchant show page", type: :feature do
+  it "can see link for update merchant" do
+    merchant_1 = Merchant.create(name: "Seeds and Flowers",
+                                 address: "1234 Mountain Rd",
+                                 city:  "Boulder",
+                                 state: "CO",
+                                 zip: 80304)
+    merchant_2 = Merchant.create(name: "Everything Dogs",
+                                 address: "5678 Lake Dr",
+                                 city:  "Boulder",
+                                 state: "CO",
+                                 zip: 80304)
+
+  visit "/merchants/#{merchant_1.id}"
+  click_link "Update Merchant"
+  expect(current_path).to eq("/merchants/#{merchant_1.id}/edit")
+  fill_in "Name", with: "Garden Center"
+  fill_in "Address", with: "23433 Pearl Parkway"
+  fill_in "City", with: "Boulder"
+  fill_in "State", with: "CO"
+  fill_in "Zip", with: "80304"
+  click_button "Update"
+
+  expect(current_path).to eq("/merchants/#{merchant_1.id}")
+  expect(page).to have_content("Garden Center")
+  expect(page).to have_content("23433 Pearl Parkway")
+  expect(page).to have_content("80304")
+  end
+end
