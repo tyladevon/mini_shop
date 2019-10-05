@@ -8,6 +8,17 @@ class MerchantsController < ApplicationController
     @merchant = Merchant.find(params[:id])
   end
 
+  def edit
+    @merchant = Merchant.find(params[:id])
+  end
+
+  def update
+    merchant = Merchant.find(params[:id])
+    merchant.update(merchant_params)
+
+    redirect_to "/merchants/#{merchant.id}"
+  end
+
   def new
   end
 
