@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-10-06T11:59:06-06:00">2019-10-06T11:59:06-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-10-06T13:08:02-06:00">2019-10-06T13:08:02-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.1
+         1.05
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>19</b> files in total.
-    <b>72</b> relevant lines. 
-    <span class="green"><b>72</b> lines covered</span> and
+    <b>22</b> files in total.
+    <b>136</b> relevant lines. 
+    <span class="green"><b>136</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -56,6 +56,16 @@
         <td>3</td>
         <td>2</td>
         <td>2</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#2670633be3798fd2ae645ce5eecf3cf954dcf918" class="src_link" title="app/controllers/items_controller.rb">app/controllers/items_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>6</td>
+        <td>3</td>
+        <td>3</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -86,6 +96,16 @@
         <td>3</td>
         <td>2</td>
         <td>2</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#e3b159c75563be0652658cbad6214faab4726ab0" class="src_link" title="app/models/item.rb">app/models/item.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>3</td>
+        <td>1</td>
+        <td>1</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -223,9 +243,19 @@
       <tr>
         <td class="strong"><a href="#31d88f12e46ff0534e0c0bd25d5a0ad8123a9a7d" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>11</td>
-        <td>8</td>
-        <td>8</td>
+        <td>12</td>
+        <td>9</td>
+        <td>9</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#fa4264406866fb4cfee820fa991e2df8903207be" class="src_link" title="spec/features/merchants/merchants_spec.rb">spec/features/merchants/merchants_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>123</td>
+        <td>59</td>
+        <td>59</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -283,6 +313,61 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="2670633be3798fd2ae645ce5eecf3cf954dcf918">
+  <div class="header">
+    <h3>app/controllers/items_controller.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>3</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class ItemsController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def index</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @items = Item.all</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
           
           
           <code class="ruby">end</code>
@@ -607,6 +692,43 @@
           <span class="hits">1</span>
           
           <code class="ruby">  self.abstract_class = true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="e3b159c75563be0652658cbad6214faab4726ab0">
+  <div class="header">
+    <h3>app/models/item.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>1</b> relevant lines. 
+      <span class="green"><b>1</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class Item &lt; ApplicationRecord</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="3">
@@ -1808,8 +1930,8 @@
     <h3>config/routes.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>8</b> relevant lines. 
-      <span class="green"><b>8</b> lines covered</span> and
+      <b>9</b> relevant lines. 
+      <span class="green"><b>9</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -1838,46 +1960,809 @@
         <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
-          <code class="ruby">  get &#39;/merchants/new&#39;, to: &#39;merchants#new&#39;</code>
+          <code class="ruby">  get &#39;/items&#39;, to: &#39;items#index&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="5">
           <span class="hits">1</span>
           
-          <code class="ruby">  get &#39;/merchants/:id&#39;, to: &#39;merchants#show&#39;</code>
+          <code class="ruby">  get &#39;/merchants/new&#39;, to: &#39;merchants#new&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
-          <code class="ruby">  get &#39;/merchants/:id/edit&#39;, to: &#39;merchants#edit&#39;</code>
+          <code class="ruby">  get &#39;/merchants/:id&#39;, to: &#39;merchants#show&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
-          <code class="ruby">  post &#39;/merchants&#39;, to: &#39;merchants#create&#39;</code>
+          <code class="ruby">  get &#39;/merchants/:id/edit&#39;, to: &#39;merchants#edit&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="8">
           <span class="hits">1</span>
           
-          <code class="ruby">  delete &#39;/merchants/:id&#39;, to: &#39;merchants#destroy&#39;</code>
+          <code class="ruby">  post &#39;/merchants&#39;, to: &#39;merchants#create&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="9">
           <span class="hits">1</span>
           
+          <code class="ruby">  delete &#39;/merchants/:id&#39;, to: &#39;merchants#destroy&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
           <code class="ruby">  patch &#39;/merchants/:id&#39;, to: &#39;merchants#update&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="10">
+        <li class="never" data-hits="" data-linenumber="11">
           
           
           <code class="ruby"></code>
         </li>
       
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="fa4264406866fb4cfee820fa991e2df8903207be">
+  <div class="header">
+    <h3>spec/features/merchants/merchants_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>59</b> relevant lines. 
+      <span class="green"><b>59</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">RSpec.describe &quot;merchants index page&quot;, type: :feature do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;can see all merchants&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    merchant_1 = Merchant.create(name: &quot;Seeds and Flowers&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">                                 address: &quot;1234 Mountain Rd&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">                                 city:  &quot;Boulder&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">                                 state: &quot;CO&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">                                 zip: 80304)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    merchant_2 = Merchant.create(name: &quot;Everything Dogs&quot;,</code>
+        </li>
+      
         <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">                                 address: &quot;5678 Lake Dr&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">                                 city:  &quot;Boulder&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">                                 state: &quot;CO&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">                                 zip: 80304)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  visit &quot;/merchants&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  expect(page).to have_content(merchant_1.name)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  expect(page).to have_content(merchant_2.name)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="23">
+          <span class="hits">1</span>
+          
+          <code class="ruby">RSpec.describe &quot;merchant page&quot;, type: :feature do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="24">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;can see merchant by id&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="25">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    merchant_1 = Merchant.create(name: &quot;Seeds and Flowers&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">                                 address: &quot;1234 Mountain Rd&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby">                                 city:  &quot;Boulder&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">                                 state: &quot;CO&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby">                                 zip: 80304)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="30">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    merchant_2 = Merchant.create(name: &quot;Everything Dogs&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby">                                 address: &quot;5678 Lake Dr&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby">                                 city:  &quot;Boulder&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby">                                 state: &quot;CO&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby">                                 zip: 80304)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="35">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="36">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  visit &quot;/merchants/#{merchant_1.id}&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="37">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="38">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  expect(page).to have_content(merchant_1.name)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="39">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  expect(page).to have_content(merchant_1.address)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="40">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  expect(page).to have_content(merchant_1.city)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="41">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  expect(page).to have_content(merchant_2.state)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="42">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  expect(page).to have_content(merchant_2.zip)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="43">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="44">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="45">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="46">
+          <span class="hits">1</span>
+          
+          <code class="ruby">RSpec.describe &quot;merchant page&quot;, type: :feature do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="47">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;can see link for new merchant&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="48">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    merchant_1 = Merchant.create(name: &quot;Seeds and Flowers&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="49">
+          
+          
+          <code class="ruby">                                 address: &quot;1234 Mountain Rd&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="50">
+          
+          
+          <code class="ruby">                                 city:  &quot;Boulder&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="51">
+          
+          
+          <code class="ruby">                                 state: &quot;CO&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="52">
+          
+          
+          <code class="ruby">                                 zip: 80304)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="53">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    merchant_2 = Merchant.create(name: &quot;Everything Dogs&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="54">
+          
+          
+          <code class="ruby">                                 address: &quot;5678 Lake Dr&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="55">
+          
+          
+          <code class="ruby">                                 city:  &quot;Boulder&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="56">
+          
+          
+          <code class="ruby">                                 state: &quot;CO&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="57">
+          
+          
+          <code class="ruby">                                 zip: 80304)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="58">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="59">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  visit &quot;/merchants&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="60">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  click_link &quot;New Merchant&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="61">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  expect(current_path).to eq(&quot;/merchants/new&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="62">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  fill_in &quot;Name&quot;, with: &quot;Cats and Stuff&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="63">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  fill_in &quot;Address&quot;, with: &quot;34543 Something St.&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="64">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  fill_in &quot;City&quot;, with: &quot;Boulder&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="65">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  fill_in &quot;State&quot;, with: &quot;CO&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="66">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  fill_in &quot;Zip&quot;, with: &quot;80302&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="67">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  click_button &quot;Create Merchant&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="68">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="69">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  expect(current_path).to eq(&quot;/merchants&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="70">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  expect(page).to have_content(&quot;Cats and Stuff&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="71">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="72">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="73">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="74">
+          <span class="hits">1</span>
+          
+          <code class="ruby">RSpec.describe &quot;merchant show page&quot;, type: :feature do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="75">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;can see link for update merchant&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="76">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    merchant_1 = Merchant.create(name: &quot;Seeds and Flowers&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="77">
+          
+          
+          <code class="ruby">                                 address: &quot;1234 Mountain Rd&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="78">
+          
+          
+          <code class="ruby">                                 city:  &quot;Boulder&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="79">
+          
+          
+          <code class="ruby">                                 state: &quot;CO&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="80">
+          
+          
+          <code class="ruby">                                 zip: 80304)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="81">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    merchant_2 = Merchant.create(name: &quot;Everything Dogs&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="82">
+          
+          
+          <code class="ruby">                                 address: &quot;5678 Lake Dr&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="83">
+          
+          
+          <code class="ruby">                                 city:  &quot;Boulder&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="84">
+          
+          
+          <code class="ruby">                                 state: &quot;CO&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="85">
+          
+          
+          <code class="ruby">                                 zip: 80304)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="86">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="87">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  visit &quot;/merchants/#{merchant_1.id}&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="88">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  click_link &quot;Update Merchant&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="89">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  expect(current_path).to eq(&quot;/merchants/#{merchant_1.id}/edit&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="90">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  fill_in &quot;Name&quot;, with: &quot;Garden Center&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="91">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  fill_in &quot;Address&quot;, with: &quot;23433 Pearl Parkway&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="92">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  fill_in &quot;City&quot;, with: &quot;Boulder&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="93">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  fill_in &quot;State&quot;, with: &quot;CO&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="94">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  fill_in &quot;Zip&quot;, with: &quot;80304&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="95">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  click_button &quot;Update&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="96">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="97">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  expect(current_path).to eq(&quot;/merchants/#{merchant_1.id}&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="98">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  expect(page).to have_content(&quot;Garden Center&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="99">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  expect(page).to have_content(&quot;23433 Pearl Parkway&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="100">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  expect(page).to have_content(&quot;80304&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="101">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="102">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="103">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="104">
+          <span class="hits">1</span>
+          
+          <code class="ruby">RSpec.describe &quot;merchant show page&quot;, type: :feature do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="105">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;can see link for delete merchant&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="106">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    merchant_1 = Merchant.create(name: &quot;Seeds and Flowers&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="107">
+          
+          
+          <code class="ruby">                                 address: &quot;1234 Mountain Rd&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="108">
+          
+          
+          <code class="ruby">                                 city:  &quot;Boulder&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="109">
+          
+          
+          <code class="ruby">                                 state: &quot;CO&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="110">
+          
+          
+          <code class="ruby">                                 zip: 80302)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="111">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    merchant_2 = Merchant.create(name: &quot;Everything Dogs&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="112">
+          
+          
+          <code class="ruby">                                 address: &quot;5678 Lake Dr&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="113">
+          
+          
+          <code class="ruby">                                 city:  &quot;Boulder&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="114">
+          
+          
+          <code class="ruby">                                 state: &quot;CO&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="115">
+          
+          
+          <code class="ruby">                                 zip: 80304)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="116">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="117">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  visit &quot;/merchants/#{merchant_1.id}&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="118">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  click_button &quot;Delete Merchant&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="119">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  expect(current_path).to eq(&#39;/merchants&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="120">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  expect(page).to_not have_content (&#39;Seeds and Flowers&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="121">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  expect(page).to_not have_content (&#39;80302&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="122">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="123">
           
           
           <code class="ruby">end</code>
