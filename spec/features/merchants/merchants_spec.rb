@@ -100,3 +100,24 @@ RSpec.describe "merchant show page", type: :feature do
   expect(page).to have_content("80304")
   end
 end
+
+RSpec.describe "merchant show page", type: :feature do
+  it "can see link for delete merchant" do
+    merchant_1 = Merchant.create(name: "Seeds and Flowers",
+                                 address: "1234 Mountain Rd",
+                                 city:  "Boulder",
+                                 state: "CO",
+                                 zip: 80302)
+    merchant_2 = Merchant.create(name: "Everything Dogs",
+                                 address: "5678 Lake Dr",
+                                 city:  "Boulder",
+                                 state: "CO",
+                                 zip: 80304)
+
+  visit "/merchants/#{merchant_1.id}"
+  click_button "Delete Merchant"
+  expect(current_path).to eq('/merchants')
+  expect(page).to_not have_content ('Seeds and Flowers')
+  expect(page).to_not have_content ('80302')
+  end
+end

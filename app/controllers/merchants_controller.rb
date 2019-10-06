@@ -1,4 +1,3 @@
-require 'pry'
 class MerchantsController < ApplicationController
   def index
     @merchants = Merchant.all
@@ -15,16 +14,20 @@ class MerchantsController < ApplicationController
   def update
     merchant = Merchant.find(params[:id])
     merchant.update(merchant_params)
-
     redirect_to "/merchants/#{merchant.id}"
   end
+
+  def destroy
+    Merchant.destroy(params[:id])
+    redirect_to '/merchants'
+  end
+
 
   def new
   end
 
   def create
     Merchant.create(merchant_params)
-
     redirect_to '/merchants'
   end
 
